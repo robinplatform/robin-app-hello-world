@@ -1,7 +1,7 @@
 {
   "name": "@robinplatform/app-example",
   "version": "0.0.0",
-  "publishScope": {
+  "publishConfig": {
     "access": "public"
   },
   "module": "./dist/index.js",
