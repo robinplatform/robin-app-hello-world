@@ -1,0 +1,20 @@
+{
+  "name": "@robinplatform/app-example",
+  "version": "0.0.0",
+  "publishScope": {
+    "access": "public"
+  },
+  "module": "./dist/index.js",
+  "files": ["dist/", "yarn.lock"],
+  "scripts": {
+    "build": "esbuild --platform=browser --format=esm src/app.tsx --outfile=./dist/index.js"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "2.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.17.10"
+  }
+}
