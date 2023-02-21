@@ -1,0 +1,6 @@
+{
+    "id": "hello-world",
+    "name": "Hello World App",
+    "pageIcon": "👋",
+    "page": "./dist/index.js"
+}
