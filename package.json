@@ -1,11 +1,14 @@
 {
   "name": "@robinplatform/app-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
   "module": "./dist/index.js",
-  "files": ["dist/", "yarn.lock"],
+  "files": [
+    "dist/",
+    "yarn.lock"
+  ],
   "scripts": {
     "build": "esbuild --platform=browser --format=esm src/app.tsx --outfile=./dist/index.js"
   },
