@@ -1,6 +1,8 @@
 import React from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { renderApp } from '@robinplatform/toolkit/react';
+import '@robinplatform/toolkit/styles.css';
+import './styles.css';
 
 const Page: React.FC = () => {
     return (

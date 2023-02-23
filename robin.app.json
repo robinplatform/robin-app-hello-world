@@ -2,5 +2,5 @@
     "id": "hello-world",
     "name": "Hello World App",
     "pageIcon": "👋",
-    "page": "https://unpkg.com/@robinplatform/app-example/src/app.tsx"
+    "page": "./src/app.tsx"
 }
