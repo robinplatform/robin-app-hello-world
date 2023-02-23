@@ -1,7 +1,8 @@
 import React from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { renderApp } from '@robinplatform/toolkit/react';
 
-export const Page: React.FC = () => {
+const Page: React.FC = () => {
     return (
         <>
             <Toaster />
@@ -10,4 +11,6 @@ export const Page: React.FC = () => {
         </>
     );
 };
+
+renderApp(<Page />);
 
