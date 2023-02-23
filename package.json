@@ -1,6 +1,7 @@
 {
   "name": "@robinplatform/app-example",
   "version": "0.0.5",
+  "main": "./src/app.tsx",
   "publishConfig": {
     "access": "public"
   },
