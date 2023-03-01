@@ -7,16 +7,18 @@ import './styles.css';
 import { getOsPlatform } from './app.server';
 
 const Page: React.FC = () => {
-    const { data: info } = useRpcQuery(getOsPlatform, {});
+    const { data: info, error } = useRpcQuery(getOsPlatform, {});
 
     return (
         <>
             <Toaster />
 
-            <button type="button" onClick={() => toast.success(`You are on ${info?.platform}!`)}>make toast</button>
+            {!info && !error && <p>Loading ...</p>}
+            {error && <p>Error: {String(error)}</p>}
+
+            {info && <button type="button" className={'robin-rounded robin-bg-dark-blue robin-text-white robin-pad'} onClick={() => toast.success(`You are on ${info?.platform}!`)}>🍞 make toast</button>}
         </>
     );
 };
 
 renderApp(<Page />);
-
